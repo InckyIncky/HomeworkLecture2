@@ -1,3 +1,8 @@
-2020-01-15 14:33:00,942 INFO FirefoxTestLog [main] webdriver configured
-2020-01-15 14:33:00,963 INFO FirefoxTestLog [main] Starting test 1
-2020-01-15 14:33:08,041 INFO FirefoxTestLog [main] Page otus.ru opened
+2020-01-23 10:25:08,648 INFO FirefoxTestLog [main] webdriver configured
+2020-01-23 10:25:08,691 INFO FirefoxTestLog [main] Starting test 1
+2020-01-23 10:25:13,401 INFO FirefoxTestLog [main] Page otus.ru opened
+2020-01-23 10:25:13,421 INFO FirefoxTestLog [main] Actual text of the title matches the expected text
+2020-01-23 10:25:13,421 INFO FirefoxTestLog [main] Exit test 1
+2020-01-23 16:06:13,928 INFO FirefoxTestLog [main] webdriver configured
+2020-01-23 16:06:13,930 INFO FirefoxTestLog [main] Starting test 1
+2020-01-23 16:06:18,434 INFO FirefoxTestLog [main] Page otus.ru opened

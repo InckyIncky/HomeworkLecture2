@@ -22,9 +22,8 @@ public class ChromeTest {
     @BeforeClass
     public static void setUp() {
         WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-        WebDriverFactory facta = new WebDriverFactory();
 
-        driver = facta.create("ChrOMe");
+        driver = WebDriverFactory.create("ChrOMe");
         LOGGER.info("webdriver configured");
     }
 

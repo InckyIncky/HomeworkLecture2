@@ -55,7 +55,7 @@ public class InfluxResultWriter {
         client.writePoint(p);
     }
 
-    public void writeAssertionErrors(List<Failure> failures) {
+    private void writeAssertionErrors(List<Failure> failures) {
         int assertionFailedCount = (int) failures.stream().filter(ASSERTION_FAILED).count();
         System.out.println("Assertion failed Tests: " + assertionFailedCount);
         Point p = getPoint("Assertion errors", assertionFailedCount);
@@ -73,7 +73,6 @@ public class InfluxResultWriter {
     private Point getPoint(String field, int value) {
         return Point
                 .measurement(config.getMeasurement())
-                .tag("environment", config.getEnvTag())
                 .addField(field, value)
                 .time(timestamp, TimeUnit.MILLISECONDS)
                 .build();

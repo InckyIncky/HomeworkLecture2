@@ -1,5 +1,7 @@
 package seleniumTests;
 
+import WebDriverFactoryLearn.DriverInterface;
+import WebDriverFactoryLearn.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,11 +17,12 @@ public class FirefoxTest {
     private static WebDriver driver;
     private static final Logger LOGGER = LogManager.getLogger("FirefoxTestLog");
 
-
     @BeforeClass
     public static void setUp() {
         WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverFactory facta = new WebDriverFactory();
+
+        driver = facta.create("FireFOX");
         LOGGER.info("webdriver configured");
     }
 

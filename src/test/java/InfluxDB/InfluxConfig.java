@@ -1,59 +1,40 @@
 package InfluxDB;
 
+import org.aeonbits.owner.ConfigFactory;
+import propertiesManager.ServerConfigs;
+
 public class InfluxConfig {
 
-    private final String host;
-    private final String user;
-    private final String pass;
-    private final String dbName;
-    private final String measurement;
-    private final String envTag;
+    ServerConfigs cfg;
 
-
-
-    public InfluxConfig(String host, String user, String pass, String dbName, String measurement, String envTag) {
-        this.host = host;
-        this.user = user;
-        this.pass = pass;
-        this.dbName = dbName;
-        this.measurement = measurement;
-        this.envTag = envTag;
-
+    public InfluxConfig(ServerConfigs cfg) {
+        this.cfg = ConfigFactory.create(ServerConfigs.class);;
     }
 
     public String getHost() {
-        return host;
+        return cfg.hostname();
     }
 
-    public String getUser() {
-        return user;
-    }
+    public String getUser() { return cfg.user(); }
 
     public String getPass() {
-        return pass;
+        return cfg.password();
     }
 
-    public String getDbName() {
-        return dbName;
-    }
+    public String getDbName() { return cfg.dbname(); }
 
     public String getMeasurement() {
-        return measurement;
-    }
-
-    public String getEnvTag() {
-        return envTag;
+        return cfg.measurement();
     }
 
     @Override
     public String toString() {
         return "InfluxConfig{" +
-                "host='" + host + '\'' +
-                ", user='" + user + '\'' +
-                ", pass='" + pass + '\'' +
-                ", dbName='" + dbName + '\'' +
-                ", measurement='" + measurement + '\'' +
-                ", envTag='" + envTag + '\'' +
+                "host='" + cfg.hostname() + '\'' +
+                ", user='" + cfg.user() + '\'' +
+                ", pass='" + cfg.password() + '\'' +
+                ", dbName='" + cfg.dbname() + '\'' +
+                ", measurement='" + cfg.measurement() + '\'' +
                 '}';
     }
 }

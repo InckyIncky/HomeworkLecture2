@@ -1,12 +1,11 @@
 package seleniumTests;
 
+import WebDriverFactoryLearn.WebDriverFactory;
 import junitListener.MyTestRunner;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.DriverManagerType;
@@ -20,16 +19,14 @@ public class ChromeTest {
     private static WebDriver driver;
     private static final Logger LOGGER = LogManager.getLogger("ChromeTestLog");
 
-
-
     @BeforeClass
     public static void setUp() {
         WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-        driver = new ChromeDriver();
+        WebDriverFactory facta = new WebDriverFactory();
+
+        driver = facta.create("ChrOMe");
         LOGGER.info("webdriver configured");
-
     }
-
 
     @Test
     public void SeleniumOpenOtusPageAssertTitle() {
@@ -54,7 +51,6 @@ public class ChromeTest {
         LOGGER.info("Мои курсы opened");
         Assert.assertTrue("My Courses test failed", driver.getTitle().contains(expectedMyCoursesPageTitle));
     }
-
 
     @AfterClass
     public static void tearDown() {

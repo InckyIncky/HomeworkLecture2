@@ -1,6 +1,5 @@
 package InfluxDB;
 
-import org.influxdb.BatchOptions;
 import org.influxdb.InfluxDB;
 import org.influxdb.InfluxDBFactory;
 import org.influxdb.dto.Point;
@@ -26,16 +25,12 @@ public class InfluxClient {
         if (!dbExists) {
             System.out.println("Create database" + dbName);
             db.query(new Query(CREATE_DATABASE + dbName));
-//            db.setDatabase(dbName);
-//            String rpName = "aRetentionPolicy";
-//            db.query(new Query("CREATE RETENTION POLICY " + rpName + " ON " + dbName + " DURATION 30h REPLICATION 2 SHARD DURATION 30m DEFAULT"));
-//            db.setRetentionPolicy(rpName);
-//            db.enableBatch(BatchOptions.DEFAULTS);
+
         }
         db.setDatabase(dbName);
-
-
     }
 
-    public void writePoint(Point point) { db.write(point);}
+    public void writePoint(Point point) {
+        db.write(point);
+    }
 }

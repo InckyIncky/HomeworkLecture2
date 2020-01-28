@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.DriverManagerType;
 
@@ -22,8 +24,9 @@ public class ChromeTest {
     @BeforeClass
     public static void setUp() {
         WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-
         driver = WebDriverFactory.create("ChrOMe");
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+
         LOGGER.info("webdriver configured");
     }
 

@@ -11,6 +11,8 @@ import org.junit.AfterClass;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class FirefoxTest {
     private static WebDriver driver;
     private static final Logger LOGGER = LogManager.getLogger("FirefoxTestLog");
@@ -20,6 +22,8 @@ public class FirefoxTest {
         WebDriverManager.firefoxdriver().setup();
 
         driver = WebDriverFactory.create("FireFOX");
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+
         LOGGER.info("webdriver configured");
     }
 

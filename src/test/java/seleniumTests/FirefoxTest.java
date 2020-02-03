@@ -19,7 +19,6 @@ public class FirefoxTest {
 
     @BeforeClass
     public static void setUp() {
-        WebDriverManager.firefoxdriver().setup();
 
         driver = WebDriverFactory.create("FireFOX");
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);

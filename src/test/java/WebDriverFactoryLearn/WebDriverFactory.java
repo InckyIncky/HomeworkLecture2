@@ -1,5 +1,7 @@
 package WebDriverFactoryLearn;
 
+import io.github.bonigarcia.wdm.DriverManagerType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
 import static WebDriverFactoryLearn.Browsers.CHROME;
@@ -23,12 +25,15 @@ public class WebDriverFactory {
         DriverInterface driverTest;
         switch(defineBrowser(browser)) {
             case CHROME:
+                WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
                 driverTest = new ChromeDriverFactory();
                 break;
             case FIREFOX:
+                WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
                 driverTest = new FirefoxDriverFactory();
                 break;
             default:
+
                 driverTest = new ChromeDriverFactory();
         }
 

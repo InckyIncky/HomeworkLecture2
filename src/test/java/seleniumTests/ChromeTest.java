@@ -1,10 +1,13 @@
 package seleniumTests;
 
 import WebDriverFactoryLearn.WebDriverFactory;
+import java.util.*;
+
 import junitListener.MyTestRunner;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -14,8 +17,9 @@ import io.github.bonigarcia.wdm.DriverManagerType;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.WebElement;
 
-@RunWith(MyTestRunner.class)
+//@RunWith(MyTestRunner.class)
 public class ChromeTest {
 
     private static WebDriver driver;
@@ -23,7 +27,6 @@ public class ChromeTest {
 
     @BeforeClass
     public static void setUp() {
-        WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
         driver = WebDriverFactory.create("ChrOMe");
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 

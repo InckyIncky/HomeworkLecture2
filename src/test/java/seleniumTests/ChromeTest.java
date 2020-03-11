@@ -29,7 +29,7 @@ public class ChromeTest {
 
 
         try(FileInputStream is = new FileInputStream
-                ("src/test/resources/config.properties");) {
+                ("src/test/resources/config.properties")) {
             props.load(is);
         } catch (IOException e) {
             e.printStackTrace();

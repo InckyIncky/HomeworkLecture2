@@ -1,33 +1,43 @@
 package seleniumTests;
 
 import WebDriverFactoryLearn.WebDriverFactory;
-import java.util.*;
 
-import junitListener.MyTestRunner;
 import org.junit.*;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.DriverManagerType;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.openqa.selenium.WebElement;
+
+import java.util.Properties;
 
 //@RunWith(MyTestRunner.class)
 public class ChromeTest {
+
 
     private static WebDriver driver;
     private static final Logger LOGGER = LogManager.getLogger("ChromeTestLog");
 
     @BeforeClass
     public static void setUp() {
-        driver = WebDriverFactory.create("ChrOMe");
+
+        Properties props = new Properties();
+
+
+        try(FileInputStream is = new FileInputStream
+                ("src/test/resources/config.properties");) {
+            props.load(is);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String browser = props.getProperty("browser");
+
+        driver = WebDriverFactory.create(browser);
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
         LOGGER.info("webdriver configured");

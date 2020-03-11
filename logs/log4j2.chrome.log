@@ -1,46 +1,50 @@
-2020-01-23 01:58:56,101 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 01:58:56,120 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 01:59:00,859 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 01:59:00,883 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
-2020-01-23 01:59:00,884 INFO ChromeTestLog [main] INFO : Exit test 1
-2020-01-23 01:59:00,885 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 01:59:04,276 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 01:59:06,955 INFO ChromeTestLog [main] INFO : Мои курсы opened
-2020-01-23 10:23:41,187 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 10:23:41,195 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 10:23:45,049 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 10:23:45,091 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
-2020-01-23 10:23:45,092 INFO ChromeTestLog [main] INFO : Exit test 1
-2020-01-23 10:23:45,094 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 10:23:48,104 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 10:23:51,577 INFO ChromeTestLog [main] INFO : Мои курсы opened
-2020-01-23 16:05:52,230 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 16:05:52,240 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 16:05:56,889 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 16:05:56,957 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 16:06:00,435 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 16:06:04,936 INFO ChromeTestLog [main] INFO : Мои курсы opened
-2020-01-23 18:20:51,190 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 18:20:51,202 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 18:20:55,759 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 18:20:55,798 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
-2020-01-23 18:20:55,799 INFO ChromeTestLog [main] INFO : Exit test 1
-2020-01-23 18:20:55,801 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 18:20:58,639 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 18:21:01,470 INFO ChromeTestLog [main] INFO : Мои курсы opened
-2020-01-23 19:32:30,579 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 19:32:30,589 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 19:32:36,083 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 19:32:36,113 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
-2020-01-23 19:32:36,113 INFO ChromeTestLog [main] INFO : Exit test 1
-2020-01-23 19:32:36,116 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 19:32:39,880 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 19:32:43,955 INFO ChromeTestLog [main] INFO : Мои курсы opened
-2020-01-23 19:36:13,520 INFO ChromeTestLog [main] INFO : webdriver configured
-2020-01-23 19:36:13,527 INFO ChromeTestLog [main] INFO : Starting test 1
-2020-01-23 19:36:17,727 INFO ChromeTestLog [main] INFO : Page otus.ru opened
-2020-01-23 19:36:17,761 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
-2020-01-23 19:36:17,761 INFO ChromeTestLog [main] INFO : Exit test 1
-2020-01-23 19:36:17,763 INFO ChromeTestLog [main] INFO : Starting test 2
-2020-01-23 19:36:20,513 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
-2020-01-23 19:36:23,230 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:11:30,632 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:11:37,202 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:11:41,425 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:11:41,465 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
+2020-03-12 00:11:41,467 INFO ChromeTestLog [main] INFO : Exit test 1
+2020-03-12 00:11:41,472 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:11:44,179 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:11:46,276 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:16:09,774 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:16:09,893 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:16:13,715 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:16:13,740 INFO ChromeTestLog [main] INFO : Actual text of the title matches the expected text
+2020-03-12 00:16:13,741 INFO ChromeTestLog [main] INFO : Exit test 1
+2020-03-12 00:16:13,746 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:16:16,426 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:16:18,774 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:16:45,171 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:16:45,183 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:16:50,432 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:16:50,458 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:16:52,967 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:16:55,665 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:19:45,914 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:19:45,923 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:19:49,802 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:19:49,824 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:19:52,278 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:19:54,820 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:31:28,289 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:31:28,300 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:31:29,163 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:31:32,010 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:32:03,687 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:32:03,697 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:32:08,920 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:32:08,938 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:32:12,361 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:32:14,644 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:34:48,209 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:34:48,223 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:34:53,093 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:34:53,111 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:34:55,948 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:34:59,262 INFO ChromeTestLog [main] INFO : Мои курсы opened
+2020-03-12 00:40:16,102 INFO ChromeTestLog [main] INFO : webdriver configured
+2020-03-12 00:40:16,116 INFO ChromeTestLog [main] INFO : Starting test 1
+2020-03-12 00:40:21,162 INFO ChromeTestLog [main] INFO : Page otus.ru opened
+2020-03-12 00:40:21,176 INFO ChromeTestLog [main] INFO : Starting test 2
+2020-03-12 00:40:24,502 INFO ChromeTestLog [main] INFO : Page otus.ru opened again
+2020-03-12 00:40:26,490 INFO ChromeTestLog [main] INFO : Мои курсы opened

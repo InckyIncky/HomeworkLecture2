@@ -2,7 +2,8 @@ package propertiesManager;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:ServerConfigs.properties"})
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({"classpath:config.properties", "system:properties"})
 public interface ServerConfigs extends Config {
 
 
@@ -16,5 +17,10 @@ public interface ServerConfigs extends Config {
     String dbname();
     @Key("influx.measurement")
     String measurement();
+
+
+    @DefaultValue("browser")
+    String browser();
+
 }
 

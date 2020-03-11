@@ -10,10 +10,14 @@ import static WebDriverFactoryLearn.Browsers.FIREFOX;
 public class WebDriverFactory {
 
     private static Browsers defineBrowser(String browser) {
-        if (browser.equalsIgnoreCase(String.valueOf(CHROME))) {
+
+        String val = browser.toUpperCase();
+        String valChrome = CHROME.toString().toUpperCase();
+        String valFirefox = FIREFOX.toString().toUpperCase();
+        if (val.equalsIgnoreCase(valChrome)) {
             return CHROME;
         }
-        if (browser.equalsIgnoreCase(String.valueOf(FIREFOX))) {
+        if (val.equals(valFirefox)) {
             return FIREFOX;
 
         } else return CHROME;
@@ -40,4 +44,5 @@ public class WebDriverFactory {
         return driverTest.setupDriver();
 
     }
+
 }

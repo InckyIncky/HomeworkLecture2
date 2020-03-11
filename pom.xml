@@ -7,18 +7,10 @@
     <groupId>com.OtusQA.HomeworkLecture2</groupId>
     <artifactId>HomeworkLecture2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <properties>
+        <browser>firefox</browser>
+        <!--        <temp.directory>C:\Users\nantonov\IdeaProjects\OtusQAHW\src\test\resources\</temp.directory>-->
+    </properties>
 
     <dependencies>
         <dependency>
@@ -63,5 +55,18 @@
             <version>1.0.4</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>12</source>
+                    <target>12</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

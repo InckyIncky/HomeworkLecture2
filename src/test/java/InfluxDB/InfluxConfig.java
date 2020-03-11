@@ -8,7 +8,7 @@ public class InfluxConfig {
     ServerConfigs cfg;
 
     public InfluxConfig(ServerConfigs cfg) {
-        this.cfg = ConfigFactory.create(ServerConfigs.class);;
+        this.cfg = ConfigFactory.create(ServerConfigs.class);
     }
 
     public String getHost() {
